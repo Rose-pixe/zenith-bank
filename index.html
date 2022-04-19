@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Zenith banking system</title>
+	<link rel="stylesheet" type="text/css" href="index.css"
+	media="screen">
+	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<nav class="nav-bar">
+		<a href="#"><img src="images/z-logo.PNG" style="height: 100%; margin-left: 48%;" ></a>
+	</nav>
+	<section class="section-img" >
+		<img src="images/z-banner.JPG"  style="width: 80%; height: 100%; margin: auto; margin-top: 10px;">
+	</section>
+	<section class="section2">
+		<h4 class="section2-header">select what you would like to do</h4>
+		<form class="section2-form" method= "post" id="form" onsubmit="  validate()">
+			<div class="form-bvn">
+				<div class="open-with" id="open-with"><a href="#" id="aOpen">Open With Your BVN</a></div>
+				<div class="open-without" id="open-without"><a href="#" id="aWithout">Open Without BVN</a></div>
+             </div>
+       <div id="open">
+			<h3 class="form-header">VALIDATE BVN</h3>
+			<p id="errorM" class ="successM"></p>
+			<div class="input">	
+             <div class="bvn">
+			<input type="text" name="text" placeholder="Enter Your BVN" id="bvn">
+			<i class="fa fa-times u_times"></i>
+			<i class="fa fa-check u_check"></i>
+			</div>
+
+			<div class="pmobile">
+			<input type="number" name="text" placeholder="Mobile No.Registered With BVN" id="pmobile">
+			<i class="fa fa-times p_times"></i>
+			<i class="fa fa-check p_check"></i>
+			</div>
+			 <!-- style="width: 80%; height: 100%; margin-left: 10%; border: 1px solid green;" -->
+
+			<div class="dob">
+			<input type="date" id="dob">
+			<i class="fa fa-times d_times"></i>
+			<i class="fa fa-check d_check"></i>
+			</div>
+			
+			<button type="submit" id ="btn" >VERIFY BVN</button>
+			
+			</div>
+			</div>
+			
+		</form>
+
+		<!-- form two -->
+		 <form class="form3" method= "Post" id="form3">
+		 	
+		       <div>
+            <h3 class="form-header">INPUT DETAILS</h3>
+            <p id="errorM" class ="successM"></p> 
+            </div>
+
+            <div class="page1" id="tab">
+            <div class="email">
+            	<input type="email" name="text" placeholder="Enter email" id="email">
+            	<i class="fa fa-times e_times"></i>
+			        <i class="fa fa-check e_check"></i>
+            </div>
+
+            <div class="title">
+            	<select>
+            		<option>Mr</option>
+            		<option>Mrs</option>
+            		<option>Master</option>
+            		<option>Miss</option>
+            		<option>Dr</option>
+            		<option>Chief</option>
+            		<option>Prefer Not To Say</option>
+            		
+            	</select>
+            	<i class="fa fa-times t_times"></i>
+			        <i class="fa fa-check t_check"></i>
+            </div>
+		  
+		      <div class="surname">
+            	<input type="text" name="text" placeholder="Enter your surname" id="surname" >
+            	<i class="fa fa-times s_times"></i>
+			        <i class="fa fa-check s_check"></i>
+          </div>
+
+          <div class="firstname">
+            	<input type="text" name="text" placeholder="Enter your firstname" id="firstname">
+            	<i class="fa fa-times f_times"></i>
+			        <i class="fa fa-check f_check"></i>
+            </div>
+
+          <div class="lastname">
+            	<input type="text" name="text" placeholder="Enter your lastname" id="lastname">
+            	<i class="fa fa-times l_times"></i>
+			        <i class="fa fa-check l_check"></i>
+            </div>
+
+
+           <div class="gender">
+            	<select>
+            		<option>Male</option>
+            		<option>Female</option>
+            	</select>
+            	<i class="fa fa-times g_times"></i>
+			        <i class="fa fa-check g_check"></i>
+           </div>
+           <span></span>
+         </div>
+           
+
+
+        <!-- pagination -->
+        <div class="page2" id="tab">
+        	<div class="dob2">
+			<input type="date"  id="dob2">
+			<i class="fa fa-times d2_times"></i>
+			<i class="fa fa-check d2_check"></i>
+			</div>
+
+			<div class="mobile3">
+			<input type="number" name="text" placeholder="Mobile Number" id="mobile3">
+			<i class="fa fa-times m3_times"></i>
+			<i class="fa fa-check m3_check"></i>
+			</div>
+
+			<div class="state">
+				<select>
+					<option style="border: none;">--Please Select Your Sate--</option>
+					<option>Abia State</option>
+					<option>Adamawa State</option>
+					<option>Akwa Ibom State</option>
+					<option>Anambra State</option>
+					<option>Bauchi State</option>
+					<option>Bayelsa State</option>
+					<option>Benue State</option>
+					<option>Bornu State</option>
+					<option>Cross River State</option>
+					<option>Delta State</option>
+					<option>Ebonyi State</option>
+					<option>Edo State</option>
+					<option>Ekiti State</option>
+					<option>Enugu State</option>
+					<option>Fed Capital Territory</option>
+					<option>Gombe State</option>
+					<option>Imo State</option>
+					<option>Jigawa State</option>
+					<option>Kaduna State</option>
+					<option>Kano State</option>
+					<option>Kastina State</option>
+					<option>Kebbi State</option>
+					<option>Kogi State</option>
+					<option>Kwara State</option>
+					<option>Lagos State</option>
+					<option>Nasarawa State</option>
+					<option>Niger State</option>
+					<option>Ogun State</option>
+					<option>Ondo State</option>
+					<option>Osun State</option>
+					<option>Oyo State</option>
+					<option>Plateau State</option>
+					<option>Rivers State</option>
+					<option>Sokoto State</option>
+					<option>Taraba State</option>
+					<option>Yobe State</option>
+					<option>Zamfara State</option>
+
+				</select>
+				<i class="fa fa-times st_times"></i>
+			  <i class="fa fa-check st_check"></i>
+				 
+			</div>
+
+			<div class="s-branch">
+				<select>
+					<option>--Please Select Branch--</option>
+					<option>Abakiliki</option>
+					<option>Abakiliki2</option>
+					<option>Afikpo</option>
+					<option>Awka</option>
+				</select>
+			     <i class="fa fa-times branch_times"></i>
+			     <i class="fa fa-check branch_check"></i>
+			</div>
+			<span></span>
+		 </div>
+        	
+
+           <!-- page upload -->
+        <div class="page-upload" id="tab">
+        	<div class="page3">
+        	<div class="container">
+        		<div>
+        		<h4>UPLOAD SIGNATURE</h4>
+              <figure class = "image-container">
+		          	<img id="chosen-Image" src="images/signature.PNG" style ="height:150px;">
+		         </figure>
+		            <input type="file" id="upload-button" accept="image/*">
+		          <label for="upload-button">
+			          <i class="fa fa-upload"></i> &nbsp;
+			           Choose A File
+		         </label>
+        	</div>
+
+        	<div>
+        		<h4>UPLOAD PHOTO</h4>
+        		<figure class = "image-container">
+		          	<img id="chosen-Image2" src="images/profile-icon.PNG" style ="height:150px;">
+		         </figure>
+		            <input type="file" id="upload-button2" accept="image/*">
+		         <label for="upload-button2" >
+			          <i class="fa fa-upload"></i> &nbsp;
+			           Choose A File
+		        </label>
+        	</div>
+
+        </div>
+        </div>
+
+          <div class="checkbox">
+          	<div class ="inp">
+          	<input type="checkbox" name="check"> 
+          	<p>Would you like to also get an instant virtual card ?</p>
+          	</div>
+          </div>
+        
+
+        <div class="Btn-acc">
+        	<button id="img-btn">Create Account</button>
+        </div>
+         <span></span>
+       </div> 
+
+       <div id ="postBtn">
+       	  <button  id ="prevBtn">Previous</button>
+       	  <button  id ="nextBtn" >Next</button>	
+			</div>
+			  <section class="step">
+			  	<p class="par"></p>
+			  	<p class="par"></p>
+			  	<p class="par"></p>
+			  </section>
+		</form>
+	</section>
+	   
+ <script src="index.js">
+
+</script>
+</body>
+</html>

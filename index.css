@@ -1,0 +1,680 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background: whitesmoke;
+	
+}
+.nav-bar{
+	height: 80px;
+	width: 100%;
+	background: white;
+	margin-top: 20px;
+}
+.section-img{
+  height: 300px;
+  width: 100%;
+  border:;
+  margin-top: 10px;
+}
+.section2{
+	height: 1000px;
+	width:100%;
+	border:;
+	margin-top: 20px;
+}
+.section2-header{
+	background: ;
+	margin: auto;
+	height: 30px;
+	width:;
+	margin-top: 100px;
+	text-align: center;
+	font-family:sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	color:red;
+}
+/*form section*/
+.section2-form{
+	background: white;
+	display:;
+	border: ;
+	height: 600px;
+	width: 45%;
+	margin: auto;
+	margin-top: 30px;
+}
+#open{
+	display: ;
+}
+
+.form-bvn{
+	height: 13%;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+
+}
+.form-bvn a{
+	text-decoration: none;
+}
+.form-bvn a:hover{
+	text-decoration: underline;
+}
+.form-bvn .open-with{
+	padding: 35px;
+	padding-left: ;
+	width: 100%;
+	background:red;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	font-size: 15px;
+
+}
+.form-bvn .open-with a{
+	color: white;
+	text-align: center;
+}
+.form-bvn .open-without{
+	padding: 35px;
+	padding-right: ;
+	width: 100%;
+	background:white;
+	font-family: sans-serif;
+	color: black;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+.form-bvn .open-without a{
+	color: black;
+	text-align: center;
+}
+
+
+
+.form-header{
+	height:50px ;
+	width: 50%;
+	font-size: 15px;
+	margin: auto;
+	border: ;
+	font-family: sans-serif;
+	margin-top: 20px;
+	text-align: center;
+	padding-top: 20px;
+	color:red;
+
+}
+.input{
+	display:inline-grid;
+	margin-top: 40px;
+	border: ;
+	width: 100%;
+	height: 300px;	
+
+}
+
+#errorM{
+	color: red;
+	text-align: center;
+	padding: 10px;
+	font-size: 18px;
+}
+
+
+.input input{
+	width: 70%;
+	margin: auto;
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	padding: 10px;
+	font-size: 14px;
+	font-family: inherit;
+}
+
+.input input[type = text]:focus, .input input[type = number]:focus, .input input[type = date]:focus{
+	outline: none;
+}
+.input button{
+	background: red;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	display: block;
+	margin: auto;
+	font-family: sans-serif;
+	font-size: 20px;
+	padding: 10px;
+	width: 40%;
+}
+/*error*/
+.bvn{
+	position: relative;
+}
+.pmobile{
+	position: relative;
+}
+.dob{
+	position: relative;
+}
+.input .fa{
+	position: absolute;
+	top:15% ;
+	right:20%;
+	display:none;
+
+}
+.fa-times{
+	color: red;
+}
+.fa-check{
+	color: green;
+}
+
+
+/*form3styling*/
+.form3{
+	display:none;
+  background:white;
+	border:;
+	height: 700px;
+	width: 45%;
+	margin: auto ;
+	margin-top:-510px;
+	}
+
+	.page1 input{
+	width: 70%;
+	margin: auto;
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	margin-top: 40px;
+	padding: 10px;
+	font-size: 14px;
+	font-family: inherit;
+	}
+	.page1 select{
+	width: 70%;
+	margin:auto;
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	margin-top: 40px;
+	padding: 10px;
+	font-size: 14px;
+	font-family: inherit;
+
+
+	}
+	
+.page1 input[type = text]:focus, .page1 input[type = email]:focus{
+	outline: none;
+}
+
+/*error*/
+.email{
+	position: relative;
+}
+.title{
+	position: relative;
+}
+.surname{
+	position: relative;
+}
+.firstname{
+	position: relative;
+}
+.lastname{
+	position: relative;
+}
+.gender{
+	position: relative;
+}
+.page1 .fa{
+	position: absolute;
+	top:20% ;
+	right:20%;
+	display:none;
+
+}
+.fa-times{
+	color: red;
+}
+.fa-check{
+	color: green;
+}
+
+/*page2*/
+.page2{
+	border:;
+	height:440px ;
+	margin-top:;
+	display:none;
+	
+}
+.page2 input{
+	width: 70%;
+	margin:auto;
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	margin-top: 40px;
+	padding: 10px;
+	font-size: 14px;
+	font-family: inherit;
+	}
+	.page2 select{
+	width: 70%;
+	margin:auto;
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	margin-top: 40px;
+	padding: 10px;
+	font-size: 14px;
+	font-family: inherit;
+}
+.page2 option{
+   font-size: 18px;
+   font-family: sans-serif;
+   padding: 4px;
+}
+.page2 input[type = number]:focus, .page2 input[type = date]:focus{
+	outline: none;
+}
+.dob2{
+  position: relative;
+}
+.mobile3{
+	position: relative;
+}
+.state{
+	position: relative;
+}
+.s-branch{
+	position: relative;
+}
+.page2 .fa{
+	position: absolute;
+	top:30% ;
+	right:20%;
+	display:none;
+
+}
+.fa-times{
+	color: red;
+}
+.fa-check{
+	color: green;
+}
+/*page3*/
+.page-upload{
+	margin-top:20px;
+  height: 480px;
+  border:;
+}
+
+/*card styling*/
+.page3{
+	margin-top: -20px;
+	height: 350px;
+	width: 100%;
+
+}
+.container{
+		width:44.7%;
+		min-width: 250px;
+		position: absolute;
+		/*transform: translate(-50%,-50%);*/
+		margin-top:;
+		padding: 50px 30px;
+		display: flex;
+		justify-content:space-evenly ;
+
+		
+	}
+.container h4{
+	color: brown;
+	font-weight: lighter;
+	text-align: center;
+	
+}
+.image-container{
+		width: 100%;
+		margin: 0 auto 30px auto;
+	}
+.image-container img{
+		display: block;
+		position: relative;
+		max-height: 30%;
+		max-width: 150px;
+		margin: auto;
+	}
+	
+.container input[type ="file"]{
+		display: none;
+	}
+.container label{
+		display: block;
+		position: relative;
+		background-color: #ccc;
+		border: 1px solid #fff;
+		color:white;
+		font-size: 20px;
+		text-align: center;
+		width: 110px;
+		padding: 10px 5px;
+		border-radius: 14px;
+		margin: auto;
+		cursor: pointer;
+		font-size: 12px;
+		font-weight: bold;
+
+	}
+
+/*stoped here*/
+
+
+.checkbox{
+	margin-top:10px;
+	width: 100%;
+	padding-left: 50px;
+}
+.checkbox .inp{
+	width: 80%;
+	display: inline-flex;
+
+
+}
+.checkbox p{
+	color:brown;
+	font-size: 18px;
+	font-family:serif;
+	margin-left: ;
+
+}
+.checkbox .inp input{
+	margin-top: 4px;
+	
+}
+.Btn-acc{
+	margin-top:40px;
+
+}
+.Btn-acc button{
+	margin-left:;
+	width: 45%;
+	padding: 15px;
+	border: none;
+	background: red;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#postBtn button{
+	margin: 25px;
+	padding: 10px;
+	border: none;
+	width: 100px;
+	outline: none;
+	cursor: pointer;
+	border-radius: 5px;
+	background: linear-gradient(90deg,red,black);
+	font-size: 20px;
+	font-weight: bold;
+	color: whitesmoke;
+	float: left;
+}
+span{
+	display: block;
+	color: red;
+	font-style: italic;
+	margin-left: 20px;
+}
+section{
+	width: 100%;
+	margin: 20px auto;
+	text-align: center;
+	float: right;
+}
+.step p{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #ededed;
+	margin: 2px 5px;
+	display: inline-flex;
+}
+
+/*pagination styling*/
+#tab{
+	display: none;
+}
+
+
+/*responsive*/
+@media only screen and (min-width: 1024px) and (max-width: 1055px) {
+	.form-bvn .open-with{
+	font-size: 12px;
+ }
+ .form-bvn .open-without{
+	font-size: 12px;
+ }
+ .checkbox{
+	padding-left: 15px;
+}
+}
+@media only screen and (min-width: 796px) and (max-width: 1024px){
+	.section-img{
+  height: 280px;
+  width: 100%;
+}
+	.section2-form{
+		width: 60%;
+	}
+	.form3{
+		width: 60%;
+	}
+	.page3{
+		width: 60%;
+	}
+	.container{
+		width: 60%;
+	}
+	.checkbox{
+	padding-left: 15px;
+}
+}
+
+@media only screen and (min-width: 478px) and (max-width: 796px){
+	.section-img{
+  height: 200px;
+  width: 100%;
+}
+
+.section2-header{
+	margin-top: 70px;
+	font-size: 16px;
+}
+	.section2-form{
+		width: 70%;
+	}
+	.form3{
+		width: 70%;
+	}
+	.page3{
+		width: 70%;
+	}
+	.container{
+		width: 70%;
+	}
+	.form-bvn{
+	height: 9.5%;
+}
+	.form-bvn .open-with{
+	font-size: 11px;
+	padding: 20px;
+ }
+ .form-bvn .open-without{
+	font-size: 11px;
+	padding: 20px;
+ }
+ .container h4{
+	font-weight: lighter;
+	font-size: 12px;
+	
+}
+.input button{
+	font-size: 15px;
+	padding: 9px;
+	width: 40%;
+}
+.Btn-acc button{
+	width: 35%;
+	padding: 10px;
+	font-size: 13px;
+	border-radius: 4px;
+}
+#postBtn button{
+	padding: 10px;
+	width: 82px;
+	font-size: 15px;
+}
+.checkbox{
+	padding-left: 10px;
+	font-size: 14px;
+}
+}
+@media only screen and (min-width: 355px) and (max-width: 478px){
+	.section-img{
+  height: 120px;
+  width: 100%;
+}
+.section2-header{
+	margin-top: 60px;
+	font-size: 15px;
+}
+	.section2-form{
+		width: 90.5%;
+	}
+	.form3{
+		width: 90.5%;
+	}
+	.page3{
+		width: 90.5%;
+	}
+	.container{
+		width: 90.5%;
+	}
+
+.form-bvn{
+	height: 9.5%;
+}
+	.form-bvn .open-with{
+	font-size: 11px;
+	padding: 20px;
+ }
+ .form-bvn .open-without{
+	font-size: 11px;
+	padding: 20px;
+ }
+ .container h4{
+	font-weight: lighter;
+	font-size: 11px;
+	
+}
+.input button{
+	font-size: 14px;
+	padding: 8px;
+	width: 40%;
+}
+
+.Btn-acc button{
+	width: 35%;
+	padding: 10px;
+	font-size: 12px;
+	border-radius: 4px;
+}
+#postBtn button{
+	padding: 10px;
+	width: 80px;
+	font-size: 14px;
+}
+.checkbox{
+	padding-left: 10px;
+	font-size: 14px;
+}
+}
+
+
+@media only screen and (min-width: 221px) and (max-width: 355px){
+	.section-img{
+  height: 120px;
+  width: 100%;
+}
+.section2-header{
+	margin-top: 60px;
+	font-size: 15px;
+}
+	.section2-form{
+		width: 100%;
+	}
+	.form3{
+		width: 100%;
+	}
+	.page3{
+		width: 100%;
+	}
+	.container{
+		width: 100%;
+	}
+
+.form-bvn{
+	height: 10%;
+}
+	.form-bvn .open-with{
+	font-size: 10px;
+	padding: 20px;
+ }
+ .form-bvn .open-without{
+	font-size: 10px;
+	padding: 20px;
+ }
+ .container h4{
+	font-weight: lighter;
+	font-size: 11px;
+	
+}
+.input button{
+	font-size: 13px;
+	padding: 7px;
+	width: 38%;
+}
+
+.Btn-acc button{
+	width: 34%;
+	padding: 9px;
+	font-size: 11px;
+	border-radius: 4px;
+}
+#postBtn button{
+	padding: 9px;
+	width: 78px;
+	font-size: 13px;
+}
+.checkbox{
+	padding-left: 10px;
+	font-size: 12px;
+
+
+}
+
+

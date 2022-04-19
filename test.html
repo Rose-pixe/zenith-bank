@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Test</title>
+	<style type="text/css">
+		#list2{
+			/*display: none;*/
+		}
+		#list{
+			display: none;
+		}
+		#subMenu{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	
+	<ul>
+		<li id="list1"><a href="">Personal</a>
+			<ul id="subMenu" >
+				<li id="list2">
+					<h3>Bank</h3>
+					<ul id="list">
+						<li>Loan</li>
+						<li>Loan</li>
+						<li>Loan</li>
+						<li>Loan</li>
+					</ul>
+				</li>
+				<li>POS</li>
+				<li>Esay Bank</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+<script type="text/javascript">
+	let tag1 = document.getElementById("list1")
+     let tag2 = document.getElementById("list2")
+     let list3 = document.getElementById("list")
+     let tag3 = document.getElementById("subMenu")
+     let tag4 = document.getElementById('child-list4')
+
+
+    tag1.addEventListener('click', function(){
+       // tag2.style.display = "block";
+       tag3.style.display = "block";
+       // tag4.style.display = "block";
+       // tag3.style.backgroundColor= "red";
+       })
+    tag2.addEventListener('click', function(){
+       list3.style.display = "block";
+       // tag3.style.display = "block";
+       // tag4.style.display = "block";
+       // tag3.style.backgroundColor= "red";
+       })
+</script>
+
+</body>
+</html>

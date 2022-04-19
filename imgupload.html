@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>image upload</title>
+	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2? family=Rubik&display = swap">
+</head>
+<style type="text/css">
+	section{
+		background-color:white;
+		height:auto;
+    max-height: 400px;
+	}
+.p2{
+	background-color:;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	position:;
+	height:auto;
+}
+
+.easy{
+	width:150px;
+	height:;
+	border: 1px solid red;
+	position:;
+}
+.easy a img{
+	width: 60px;
+	height: 60px;
+	margin-left:45px;
+	margin-top: 10px;
+}
+.easy h3{
+	font-size: 12px;
+	color:rgb(39,41,45);
+	text-align: center;
+	padding-top: 5px;
+}
+
+.easys{
+	width:150px;
+	height: 137px;
+	border:;
+	position:;
+	margin:5px 10px;
+	margin-top:-15px;
+}
+.easys a img{
+	width: 60px;
+	height: 60px;
+	/*margin-left:30px;*/
+	margin:15px;
+	margin-top:;
+}
+.easys h3{
+	font-size: 12px;
+	color:rgb(39,41,45);
+	text-align: center;
+	padding-top:;
+}
+
+.easychild{
+	display: ;
+	border-top:;
+	position:absolute;
+  margin-top:50px;
+	border: 1px solid yellow;
+	width:600px;
+	background-color:;
+}
+.easyparent{
+	border: 1px solid black;
+	width:150px;
+	height: 188px;
+	margin: 40px;
+	position: relative;
+	top:;
+}
+
+#easychild2{
+	display:none;
+	z-index: 0;
+}
+.easy:hover{
+	background-color: #ccc;
+}
+.easyparent:hover #easychild2{
+	display:block;
+	position:relative;
+
+}
+.greeks1{
+  width:2px;
+  height: 35px;
+  background-color:red;
+  position: absolute;
+  top:-22%;
+  left: 12%;
+}
+.greeks2{
+	width:350px;
+	height:2px;
+	background-color:red;
+	position: absolute;
+	top:0%;
+	left:70%;
+	transform: translate(-50%,-50%);
+}
+.greeks2::before{
+	content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color:red;
+  animation: animated 3s forwards;
+}
+@keyframes animated{
+	100%{
+		right:100%;
+	}
+}
+.greeks{
+	width:300px;
+	height:2px;
+	background-color:red;
+	position: absolute;
+	top:0%;
+	right:-70%;
+	transform: translate(-50%,-50%);
+}
+.greeks::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:red;
+  animation: animate 3s forwards;
+}
+@keyframes animate{
+	100%{
+		left:100%;
+	}	
+
+}
+button{
+	background-color: red;
+	border: none;
+	width: 12%;
+	height:10%;
+}
+button a{
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+	font-weight:bold;
+
+}
+.video-page{
+	height:350px;
+	width: 100%;
+	position:relative;
+}
+.content-video{
+ background-color: rgba(0, 0, 0, 0.7);
+ position: absolute;
+ width: 100%;
+ height:350px;
+}
+
+.vid-bg{
+	position:absolute;
+	max-height:350px !important;
+	min-width: 100%;
+	object-fit: fill;
+	
+}
+
+.video-page .asset-content{
+	border: 1px solid red;
+	height: 50%;
+	width:40%;
+	position: absolute;
+	margin: auto 30%;
+	top:80px;
+	z-index: 200px;
+}
+.asset-content h3{
+	font-size: 28px;
+	padding:10px;
+}
+.asset-content p{
+	line-height:25px;
+}
+.asset-content button{
+	background-color:whitesmoke;
+	border:2px solid red;
+	height: 25%;
+	width: 30%;
+	margin: auto 35%;
+	margin-top:20px;
+	transition: 2s;
+}
+.asset-content button a{
+  text-decoration: none;
+	color:#202124;
+	font-size: 12px;
+	font-weight:bold;
+	font-family: sans-serif;
+}
+
+/*footer*/
+.footer{
+	width: 100%;
+	height:1400px;
+	background-color:red;
+	position:relative;
+	border: 1px solid red;
+}
+.footer .footerhead{
+	border:1px solid red ;
+	position: absolute;
+	width: 100%;
+	height: 380px;
+	display: flex;
+	justify-content:space-evenly;
+
+}
+.footerhead .footer-c{
+	border: 1px solid black;
+	height:300px;
+	width:16%;
+	margin-top: 45px;
+}
+.footerhead .footer-c1{
+	border: 1px solid red;
+	width:23%;
+}
+.footerhead h3{
+	text-align:left;
+	font-size: 12px;
+	margin-left: 10px;
+	font-weight: bold;
+	font-family:sans-serif;
+}
+.footerhead ul li{
+	list-style-type: none;
+	line-height: 20px;
+	margin-left:-30px;
+}
+
+.footerhead ul li a{
+	font-size:11px;
+	text-decoration: none;
+	color:rgb(39,41,45);
+	font-family:sans-serif;
+	transition: 0.1s;
+}
+.footerhead ul li a:hover{
+	color: red;
+}
+.footer-link{
+	position: absolute;
+	/*top:100%;*/
+	left: 2%;
+	width:88%;
+	height:45px;
+	border:1px solid rgb(39,41,45);
+	background-color: #ccc;
+	border-radius: 8px;
+}
+.footer-link ul{
+	border:;
+	display: flex;
+	height:45px;
+	margin-top:-2.5px;
+}
+.footer-link ul li{
+	list-style-type: none;
+	margin: 5px 8px 15px 5px;
+	border:1px solid black;
+	padding:10px 2px 25px 2px;
+	border-radius:50%;
+
+}
+.footer-link ul li a{
+	text-decoration: none;
+	color:black;
+}
+.footer-link ul li a i{
+	margin-top: -8px;
+	padding:8px 10px 5px 10px;
+}
+
+.footer-link ul li a .fa-whatsapp:hover{
+	color: green;
+}
+
+.footer-link ul li a .fa-instagram:hover{
+	color: brown;
+}
+
+.footer-link ul li a .fa-linkedin:hover{
+	color:blue;
+}
+
+.footer-link ul li a .fa-youtube:hover{
+	color:red;
+}
+
+.footer-link ul li a .fa-facebook:hover{
+	color:darkblue;
+}
+
+.footer-link ul li a .fa-twitter:hover{
+	color:skyblue;
+}
+
+ 
+</style>
+   	
+<body> 
+	<source src="/media/2448/zenith-skyview_converted_vo3.mp4" type="video/mp4">
+	<source src="/media/2448/zenith-skyview_converted_vo3.mp4" type="video/mp4">
+	<a href="https://www.zenithbank.com/media/1016/open-account-alt_zenith-icons-300x300.png?anchor=center&mode=crop&width=100&height=100&rnd=131380479970000000"></a>
+	<section>
+  <div class="p2"> 
+  <div class="easyparent" id="easyparent2">
+		<div class="easy">
+			<a href=""><img src="images/2ink.JPG" style="color: white;"></a>
+			<h3>WAYS TO BANK</h3>
+		</div>
+	
+
+
+	<div class="easychild" id="easychild2">
+		<div class="greeks"></div>
+    <div class="greeks1"></div>
+    <div class="greeks2"></div>
+		<div class="easychild3" style="display:flex; padding-top: 30px;">
+		<div class="easys">
+			<a href=""><img src="images/4ink.JPG"></a>
+			<h3>ATM</h3>
+		</div>
+		<div class="easys">
+			<a href=""><img src="images/2ink.JPG"></a>
+			<h3>BRANCH</h3>
+		</div>
+		
+		<div class="easys">
+			<a href=""><img src="images/5ink.JPG"></a>
+			<h3>MOBILE</h3>
+		</div>
+
+		<div class="easys">
+			<a href=""><img src="images/6ink.JPG"></a>
+			<h3>ONLINE</h3>
+		</div>
+  </div>
+</div>
+</div>
+
+<!-- 2nd -->
+<div class="easyparent" id="easyparent2">
+		<div class="easy">
+			<a href=""><img src="images/15ink.JPG"></a>
+			<h3>PROMO, PRODUCTS & SERVICES</h3>
+		</div>
+	
+
+
+	<div class="easychild" id="easychild2" style="width:750px;">
+		<div class="greeks" style="margin-right:65%;"></div>
+    <div class="greeks1" style="margin-left:-2%;"></div>
+    <div class="greeks2" style="margin-left:-43%;"></div>
+		<div class="easychild3" style="display:flex; padding-top: 30px;">
+		<div class="easys">
+			<a href=""><img src="images/7ink.JPG"></a>
+			<h3>PROMOS</h3>
+		</div>
+		<div class="easys">
+			<a href=""><img src="images/8ink.JPG"></a>
+			<h3>LOANS</h3>
+		</div>
+		
+		<div class="easys">
+			<a href=""><img src="images/4ink.JPG"></a>
+			<h3>CARDS</h3>
+		</div>
+
+		<div class="easys">
+			<a href=""><img src="images/1ink.JPG"></a>
+			<h3>PRIVATE BANKING</h3>
+		</div>
+
+		<div class="easys">
+			<a href=""><img src="images/9ink.JPG"></a>
+			<h3>TRANSFER</h3>
+		</div>
+  </div>
+</div>
+</div>
+
+<!-- 3rd -->
+<div class="easyparent" id="easyparent2">
+		<div class="easy">
+			<a href=""><img src="images/1ink.JPG"></a>
+			<h3>OPEN AN ACCOUNT</h3>
+		</div>
+	
+
+
+	<div class="easychild" id="easychild2" style="margin-left:-155%;">
+		<div class="greeks" style="margin-right:38%;"></div>
+    <div class="greeks1" style="margin-left:39%;"></div>
+    <div class="greeks2" style="margin-left:-37%;"></div>
+		<div class="easychild3" style="display:flex; padding-top: 30px;">
+		<div class="easys">
+			<a href=""><img src="images/1ink.JPG"></a>
+			<h3>CURRENT ACCOUNT</h3>
+		</div>
+		<div class="easys">
+			<a href=""><img src="images/1ink.JPG"></a>
+			<h3>SAVINGS ACCOUNT</h3>
+		</div>
+		
+		<div class="easys">
+			<a href=""><img src="images/1ink.JPG"></a>
+			<h3>SALARY ACCOUNT</h3>
+		</div>
+
+		<div class="easys">
+			<a href=""><img src="images/1ink.JPG"></a>
+			<h3>DOMICIARY ACCOUNT</h3>
+		</div>
+  </div>
+</div>
+</div>
+
+<!-- 4th -->
+<div class="easyparent" id="easyparent2">
+		<div class="easy">
+			<a href=""><img src="images/18ink.JPG"></a>
+			<h3>CUSTOMER SERVICES</h3>
+		</div>
+	
+
+
+	<div class="easychild" id="easychild2" style="margin-left:-310%;">
+		<div class="greeks" style="margin-right:38%;"></div>
+    <div class="greeks1" style="margin-left:78%;"></div>
+    <div class="greeks2" style="margin-left:-37%;"></div>
+		<div class="easychild3" style="display:flex; padding-top: 30px;">
+		<div class="easys">
+			<a href=""><img src="images/18ink.JPG"></a>
+			<h3>SELF-SERVICE</h3>
+		</div>
+		<div class="easys">
+			<a href=""><img src="images/10ink.JPG"></a>
+			<h3>FEEDBACK</h3>
+		</div>
+		
+		<div class="easys">
+			<a href=""><img src="images/11ink.JPG"></a>
+			<h3>ENQUIRIES</h3>
+		</div>
+
+		<div class="easys">
+			<a href=""><img src="images/12ink.JPG"></a>
+			<h3>CHAT WITH AGENT</h3>
+		</div>
+  </div>
+</div>
+</div>
+
+<!-- 5th -->
+<div class="easyparent">
+		<div class="easy">
+			<a href=""><img src="images/19ink.JPG"></a>
+			<h3>MY ASPIREHUB</h3>
+		</div>
+
+</div>
+</div>
+</section>
+
+<section class="div" style="height: 20%; border:1px solid red;">
+	<img src="images/audio.JPG" style="height:400px; width:100%;">
+</section>
+<!-- 
+<a href="https://www.zenithbank.com/customer-service/self-service" target="_self" class="box-link"></a>
+<video autoplay loop width="250" >
+ -->
+ <section style="height: 500px;background:#ccc;">
+ 	<button><a href="">LEARN MORE</a></button>
+ 		<button><a href="">OPEN ACCOUNT</a></button>
+ </section>
+    
+
+<section class="video-page">
+
+ 	<video src="images/zenith video.mp4" class="vid-bg" autoplay loop muted style="width:100%;"> </video>
+ <div class="content-video"></div>
+ 	<div class="asset-content">
+           <h3 style="text-align: center;"><span style="color:white;">Sustainable Development</span></h3>
+           <p style="text-align: center;"><span style="color: white;">Our aim is to reduce our negative social, economic and environmental footprints while enhancing the overall value we create as a leading brand.</span></p>
+               <button><a href="">LEARN MORE</a></button>
+    </div>
+</section>
+<section class="footer">
+	<div class="footerhead">
+		<div class="footer-c footer-c1">
+			<h3>PRODUCT ADVERT</h3>
+			 <iframe width="263" height="150" src="https://www.youtube.com/embed/yOVys9rSUak?list=TLGGR2THhsV0WSwxNDAzMjAyMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-left:20px;"></iframe>
+		</div>
+
+		<div class="footer-c">
+			<h3>CUSTOMER SERVICES</h3>
+			<ul>
+				<li><a href="">Help Center</a></li>
+				<li><a href="">Whistle Blower</a></li>
+				<li><a href="">Dispense Error</a></li>
+				<li><a href="">Frequently Asked Questions</a></li>
+				<li><a href="">Contact Us</a></li>
+				<li><a href="">Locate a Branch / ATM</a></li>
+				<li><a href="">Downloads</a></li>
+				<li><a href="">Create Hardware Token Pin</a></li>
+			</ul>
+		</div>
+
+		<div class="footer-c">
+			<h3>PROTECT YOURSELF</h3>
+			<ul>
+				<li><a href="">Scam Alert</a></li>
+				<li><a href="">Replace Your Card</a></li>
+				<li><a href="">Internet Banking Security</a></li>
+				<li><a href="">Email Fraud and Phishing</a></li>
+				<li><a href="">Card Security</a></li>
+				<li><a href="">Online Security</a></li>
+				<li><a href="">Bank Verification Number (BVN)</a></li>
+				<li><a href="">Regulatory Authorities</a></li>
+			</ul>
+		</div>
+
+		<div class="footer-c">
+		 <h3>QUICK LINKS</h3>
+			<ul>
+				<li><a href="">Realtime Access</a></li>
+				<li><a href="">Realtime Access</a></li>
+				<li><a href="">Zenith Trade Portal</a></li>
+				<li><a href="">Zenith Trade Portal</a></li>
+				<li><a href="">Reactivate Dormant Account</a></li>
+				<li><a href="">Letter of Credit Application Form</a></li>
+				<li><a href="">Request Cheque Book</a></li>
+				<li><a href="">Travel Notification Portal</a></li>
+			</ul>
+		</div>
+
+		<div class="footer-c footer-c1">
+		 <h3>NEWS</h3>
+			<ul>
+				<li><a href="">Zenith Bank Surpasses Market Expectations With Double-Digit Growth In Gross Earnings.</a></li>
+				<li><a href="">Zenith Bank Remains Investors’ Toast.</a></li>
+				<li><a href="">Preliminary Notice on London Interbank Offered Rate (“LIBOR”) Transition.</a></li>
+				<li><a href="">Ebenezer Onyeagwu Emerges “CEO of the Year” as Zenith Bank Wins 'Most Responsible Organisation in Africa’.</a></li>
+				<li><a href="">Zenith Bank Shows Resilience As Profit Before Tax (PBT) Grows By 3% In H1 2021.</a></li>
+			</ul>
+		</div>
+		
+	</div>
+	<div class="footer-link">
+	<ul>
+		<li><a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+		<li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+		<li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+		<li><a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+		<li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+		<li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+	</ul>
+</div>
+</section>
+ 
+<!-- <div class="greeks"></div>
+<div class="greeks1"></div>
+<div class="greeks2"></div> -->
+<script type="text/javascript">
+	
+</script>
+</body>
+</html>
