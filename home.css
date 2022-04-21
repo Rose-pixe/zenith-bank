@@ -381,8 +381,6 @@
 
   /*design for responsive only*/
   .section-res{
-  	 background:;
-  	 height:;
   	 display:none;
   }
 .logo-zenith{
@@ -390,7 +388,6 @@
   	margin-left:80%;
   	height:30%;
   	width:20%;
-  	/* border:; */
 
   }
   .logo-zenith img{
@@ -400,7 +397,6 @@
 
   .sectionAll{
   	margin-top: 30px;
-  	border:;
   	display:flex;
   	height: 10%;
   	max-width:60% ;
@@ -410,32 +406,27 @@
   .bars1{
    width:100%;
    height:100%;
-  	border:;
   	padding:10px;
 
   }
   .bars2{
    width:100%;
    height: 100%;
-  	border:;
   	padding:10px;
   }
   .bars3{
    width:100%;
    height:100%;
-  	border:;
   	padding:10px;
   }
   .bars4{
    width:100%;
    height:100%;
-  	border:;
   	padding:10px;
   }
   .bars5{
    width:100%;
    height:100%;
-  	border:;
   	padding:10px;
   }
   .responsive-bar{
@@ -519,7 +510,6 @@
   	margin-left: 20px;
 }
 .responsive-lock h4{
-	 text-transform:;
 	 color: black;
   	font-size: 18px;
   	margin-left: -14px;
@@ -553,11 +543,8 @@
 	height: 75px;
 	margin-top: 20px;
 }
-.personal-ul ul{
-	padding-top:;
-	height:;
-	border: ;
-}
+/* .personal-ul ul{ }*/
+
 .personal-ul li{
 	list-style-type: none;
 	padding: 10px;
@@ -646,23 +633,20 @@
   	font-size: 18px;
 }
 
-.up-menu {
-  display: ;
-}
+/*.up-menu {
+   display: ; 
+ } */
 .up-menu img{
    position: absolute;
    margin-left: 115px;
-   border:;
    margin-top:-40px;
    opacity: 0.8;
 }
 .select-country{
 	margin-top:30px;
 	display: none;
-	margin-left:;
 	width:700px;
 	height: 400px;
-	border:;
 
 }
 .c-country{
@@ -670,11 +654,9 @@
 	opacity: 0.8;
 	width:300px;
 	height:400px;
-	margin-left:;
 
 }
 .country-name{
-	border:;
 	padding-top: 20px;
 }
 .country-name h4{
@@ -692,7 +674,6 @@
 	list-style-type: none;
 	width: 90px;
 	margin-top: 10px;
-	border:;
 }
 .ul a{
 	text-decoration: none;
@@ -714,7 +695,6 @@
 	list-style-type: none;
 	margin-top: 10px;
 	width: 90px;
-	border:;
 }
 .ul2 a{
 	display: inline-flex;
@@ -725,12 +705,10 @@
 	font-size: 12px;
 	color: #ccc;
 	font-weight: bolder;
-	border:;
 	margin-top: 2px;
 	margin-left: 4px;
 }
 .subsidiaries{
-	border:;
 	margin-top:15px ;
 }
 .subsidiaries h4{
@@ -755,13 +733,10 @@
 }*/
 .nested-list ul{
 	display: block;
-	border:;
    margin: 0;
    padding:0px;
    list-style-type: none;
    background-color: #ccc;
-   border-bottom:;
-   opacity:;
 
 }
 
@@ -878,7 +853,7 @@
 @media only screen and (min-width: 1010px) and (max-width: 1238px){
 	#menu{
 		margin-left:-3px;
-	}`
+	}
 	.navigate{
 		width: 15%;
 	}
@@ -900,11 +875,9 @@
   }
   @media only screen and (min-width: 484px) and (max-width: 768px){
   	  .logo-zenith{
-  	  	background:;
   	  	width:15%;
   	  	height: 15%;
   	  	margin-left: 85%;
-  	  	margin-top:;
   	  }
   	  .sectionAll{
   	  	max-width:80% ;
@@ -936,6 +909,7 @@
   	  }
   .section-res{
      	display:block;
+     	margin-top: -60px;
      }
 }
 
@@ -944,20 +918,40 @@
 /*section homepage-slider*/
 .s-slider{
 	background-color:#ccc;
+	height: 530px;
+	width: 100%;
 }
 .center{
-	height: 500px;
+	height: 530px;	
 }
+.center img{
+	width: 100%;
+	height: 530px;
+}
+/* @media only screen and (min-width: 768px){
+	.center{
+	width: 100%;
+	}
+} */
 
-@media only screen and (max-width: 768px) {
-
+ @media only screen and (max-width: 768px) {
 	.center img{
 	width: 100%;
-	height: 230px;
+	height: 200px;
 }
+ .s-slider{
+	 height: 200px;
+ }
+ .center{
+	 height: 200px;
+ }
   
 }
-
+@media only screen and (max-width: 768px) {
+	.stickyList{
+		display: none;
+	}
+}
 
 /*sticky-list*/
 .stickyList{
@@ -999,10 +993,15 @@
 }
 /*section3*/
 .section3{
-   height:130px;
+   height:150px;
    position:relative;
    width: 100%;
    transition:1s;
+}
+@media only screen and (max-width: 768px) {
+.section3{
+	display: none;
+}
 }
 .p2{
 	/* background-color:; */
@@ -1059,20 +1058,16 @@
     margin-top:35px;
 	/* border:; */
 	width:600px;
-	background-color:;
 }
 .easyparent{
-	border:;
 	width:150px;
 	height: 140px;
 	margin: 20px;
 	position:relative;
-	top:;
 }
 
 #easychild2{
 	display:none;
-	z-index:;
 }
 .easy:hover{
 	background-color: #ccc;
@@ -1147,7 +1142,55 @@
 .section4{
 	position: relative;
 	height:450px;
-	border:;
+	width: 100%;
+}
+.section4-img-container{
+	width: 100%;
+}
+@media only screen and (max-width: 768px) {
+	.section4{
+		height: 250px;
+	}
+	.section4-img{
+		height: 250px;
+	}
+}
+@media only screen and (max-width: 768px){
+	.image-text-container{
+		height: 250px !important;
+		width: 100% !important;
+		margin-top: -78% !important;
+   }
+   .image-text{
+   	border: 1px solid red;
+   	left: 0px !important;
+   	padding: 3px !important;
+   }
+  
+  .image-text h3{
+  	font-size:18px !important;
+  	text-align: center !important;
+  }
+  .image-text p{
+    font-weight: 400 !important;
+    text-align: center !important;
+    font-size: 15px !important;
+    width: 90%;
+    margin: auto;
+  }
+  .section4-link{
+  	left: 30px !important;
+  	width: 80% !important;
+	top:15px !important;
+  }
+  
+}
+
+
+
+
+
+.section4-img{
 	width: 100%;
 }
 .image-text-container{
@@ -1181,7 +1224,6 @@
 	position: absolute;
 	margin-top:180px;
 	left:120px;
-	border:;
 	width:43%;
 	height:15%;
 	display:flex;
@@ -1215,7 +1257,6 @@
 .section5 ul{
   width: 50%;
   height: 70px;
-  border:;
   margin:auto 25%;
   top:35px;
   position: absolute;
@@ -1239,7 +1280,6 @@
 	font-weight: bold;
 }
 .section5-bg-image{
-	border:;
 	width:15%;
 	height:45%;
 	position: absolute;
@@ -1248,7 +1288,6 @@
 }
 .section5-msg{
 	position: absolute;
-	border:;
 	height: 45%;
 	width: 35%;
 	margin: auto 43%;
@@ -1308,7 +1347,6 @@
 }
 
 .section-6 .asset-content{
-	border:;
 	height: 50%;
 	width:40%;
 	position: absolute;
@@ -1341,7 +1379,6 @@
 
 .asset-content button a{
   text-decoration: none;
-  border: ;
   padding:10px;
   padding-left: 30px;
   padding-right:30px;
@@ -1362,5 +1399,5 @@
 	width: 100%;
 	height:3px;
 	position: absolute;
-	top: -2%px;
+	top: -2%;
 }

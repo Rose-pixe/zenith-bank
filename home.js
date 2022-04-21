@@ -325,7 +325,7 @@ document.querySelector("#easyparent1").addEventListener("mouseover", function(){
 })
 
 document.querySelector("#easyparent1").addEventListener("mouseout", function(){
-  document.querySelector(".section3").style.height = "130px";
+  document.querySelector(".section3").style.height = "150px";
 })
 
 // 2
@@ -335,7 +335,7 @@ document.querySelector("#easyparent2").addEventListener("mouseover", function(){
 })
 
 document.querySelector("#easyparent2").addEventListener("mouseout", function(){
-  document.querySelector(".section3").style.height = "130px";
+  document.querySelector(".section3").style.height = "150px";
 })
 
 // 3
@@ -344,7 +344,7 @@ document.querySelector("#easyparent3").addEventListener("mouseover", function(){
 })
 
 document.querySelector("#easyparent3").addEventListener("mouseout", function(){
-  document.querySelector(".section3").style.height = "130px";
+  document.querySelector(".section3").style.height = "150px";
 })
 
 // 4
@@ -353,5 +353,5 @@ document.querySelector("#easyparent4").addEventListener("mouseover", function(){
 })
 
 document.querySelector("#easyparent4").addEventListener("mouseout", function(){
-  document.querySelector(".section3").style.height = "130px";
+  document.querySelector(".section3").style.height = "150px";
 })
