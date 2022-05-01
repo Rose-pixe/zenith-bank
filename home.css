@@ -1397,7 +1397,112 @@
 }
 .footer img{
 	width: 100%;
-	height:3px;
+	height:4px;
 	position: absolute;
-	top: -2%;
+}
+
+.footer .footerhead{
+	border:1px solid red ;
+	position: absolute;
+	width: 100%;
+	height: 380px;
+	display: flex;
+	justify-content:space-evenly;
+
+}
+.footerhead .footer-c{
+	border: 1px solid black;
+	height:300px;
+	width:16%;
+	margin-top: 45px;
+	padding: 8px;
+}
+.footerhead .footer-c1{
+	border: 1px solid red;
+	width:23%;
+	padding: 8px;
+}
+.footer-c h3{
+	text-align:left;
+	font-size: 12px;
+	margin-left: 10px;
+	font-weight: bold;
+	font-family:sans-serif;
+}
+.footerhead ul {
+	list-style-type: none;
+	padding: 12px;
+} 
+
+.footerhead ul p a{
+	font-size:11px;
+	text-decoration: none;
+	color:rgb(39,41,45);
+	font-family:sans-serif;
+	line-height:18px;
+	transition: 0.1s;
+}
+.footerhead ul p a:hover{
+	color: red;
+}
+ /* footer-link */
+.footer-link{
+	position: absolute;
+	top:90%;
+	left: 4%;
+	width:60%;
+	height:45px;
+	border:1px solid rgb(39,41,45);
+	background-color: #ccc;
+	border-radius: 2px;
+}
+.footer-link ul{
+	display: flex;
+	justify-content:flex-start;
+	height:45px; 
+	margin-top:-2px;
+	padding: 5px;
+	border: 1px solid red;
+	list-style-type: none;
+}
+.footer-link ul li{
+	padding: 8px 0px 8px 0px;
+	margin-left: 5px;
+	border:1px solid black;
+	
+	border-radius:50%;
+
+}
+
+.footer-link ul li a{
+	text-decoration: none;
+	color:black;
+}
+.footer-link ul li a i{
+	margin-top: -8px;
+	padding:8px 10px 5px 10px;
+}
+
+.footer-link ul li a .fa-whatsapp:hover{
+	color: green;
+}
+
+.footer-link ul li a .fa-instagram:hover{
+	color: brown;
+}
+
+.footer-link ul li a .fa-linkedin:hover{
+	color:blue;
+}
+
+.footer-link ul li a .fa-youtube:hover{
+	color:red;
+}
+
+.footer-link ul li a .fa-facebook:hover{
+	color:darkblue;
+}
+
+.footer-link ul li a .fa-twitter:hover{
+	color:skyblue;
 }
