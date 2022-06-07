@@ -1537,7 +1537,22 @@
 	cursor: pointer;
 	margin-top:1.5px;
 }
+.footer-page .footer-page-icon1{
+	border:1px solid black;
+	width: 4%;
+	height:45px;
+	border-radius: 50%;
+	background-color: red;
+	cursor: pointer;
+	margin-top:1.5px;
+}
+
 .footer-page .footer-page-icon i{
+	margin-left:37%;
+	margin-top:25%;
+	color: white;
+}
+.footer-page .footer-page-icon1 i{
 	margin-left:37%;
 	margin-top:25%;
 	color: white;
@@ -1562,6 +1577,9 @@
 	color: red;
 }
 /* footer-page-link */
+.footer-page-icon1{
+	display: none;
+}
 .footer-page-link{
 	height: 250px;
 	position: absolute;
@@ -1570,6 +1588,7 @@
 	margin-top: 10%;
 	margin-left: 1%;
 }
+
 .footer-page-link ul{
 	list-style-type: none;
 	height: 250px;

@@ -355,3 +355,22 @@ document.querySelector("#easyparent4").addEventListener("mouseover", function(){
 document.querySelector("#easyparent4").addEventListener("mouseout", function(){
   document.querySelector(".section3").style.height = "150px";
 })
+
+// stickylinkpage
+let stickylink = document.querySelector(".footer-page-icon");
+let stickylink2 = document.querySelector(".footer-page-icon1");
+let ul = document.querySelector(".footer-page-link");
+stickylink.addEventListener("click", function(){
+  ul.style.display = "none";
+  stickylink.style.display = "none";
+  stickylink2.style.display = "block";
+
+
+});
+stickylink2.addEventListener("click", function(){
+  ul.style.display = "block";
+  stickylink.style.display = "block";
+  stickylink2.style.display = "none";
+
+
+});
